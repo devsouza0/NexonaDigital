@@ -45,10 +45,10 @@
     <style>
         .project-card-real{overflow:hidden;}
         .project-link{display:block;color:inherit;text-decoration:none;}
-        .project-preview-barbearia{position:relative;overflow:hidden;min-height:270px;background:#111;}
+        .project-preview-barbearia,.project-preview-restaurante{position:relative;overflow:hidden;min-height:270px;background:#111;}
         .project-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s ease,filter .5s ease;}
-        .project-preview-barbearia::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.75),rgba(0,0,0,.08) 60%);z-index:1;}
-        .project-preview-barbearia .project-browser-bar{position:absolute;top:0;left:0;width:100%;z-index:5;}
+        .project-preview-barbearia::after,.project-preview-restaurante::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.75),rgba(0,0,0,.08) 60%);z-index:1;}
+        .project-preview-barbearia .project-browser-bar,.project-preview-restaurante .project-browser-bar{position:absolute;top:0;left:0;width:100%;z-index:5;}
         .project-overlay{position:absolute;inset:0;z-index:4;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;padding:55px 22px 22px;pointer-events:none;}
         .project-demo-badge{padding:7px 11px;border-radius:100px;background:rgba(8,11,18,.85);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(8px);color:#fff;font-size:9px;font-weight:800;letter-spacing:1.5px;}
         .project-view{display:flex;align-items:center;gap:8px;padding:10px 14px;border-radius:9px;background:#fff;color:#080b12;font-size:11px;font-weight:800;opacity:0;transform:translateY(10px);transition:.3s ease;}
@@ -57,7 +57,7 @@
         .project-card-real:hover .project-image{transform:scale(1.07);filter:brightness(.75);}
         .project-card-real:hover .project-view{opacity:1;transform:translateY(0);}
         .project-card-real:hover .project-arrow{background:#fff;color:#080b12;transform:rotate(5deg);}
-        @media(max-width:768px){.project-view{opacity:1;transform:none}.project-preview-barbearia{min-height:240px}}
+        @media(max-width:768px){.project-view{opacity:1;transform:none}.project-preview-barbearia,.project-preview-restaurante{min-height:240px}}
     </style>
 
 </head>
@@ -732,72 +732,65 @@
 
 
             </article>
+            <!-- PROJETO 2 - BRASA BURGER -->
 
+            <article class="project-card project-card-real">
 
+                <a href="https://nexorademorestaurante.viniciusgsouza200600.workers.dev/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="project-link">
 
-            <!-- PROJETO 2 -->
+                    <div class="project-preview project-preview-restaurante">
 
-            <article class="project-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=85"
+                            alt="Demo Brasa Burger"
+                            class="project-image">
 
+                        <div class="project-browser-bar">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
 
-                <div class="project-preview project-preview-two">
+                        <div class="project-overlay">
 
+                            <div class="project-demo-badge">
+                                DEMONSTRAÇÃO
+                            </div>
 
-                    <div class="project-browser-bar">
+                            <div class="project-view">
+                                <i class="fa-regular fa-eye"></i>
+                                Ver projeto
+                            </div>
 
-                        <span></span>
-                        <span></span>
-                        <span></span>
-
-                    </div>
-
-
-                    <div class="project-demo">
-
-                        <i class="fa-solid fa-utensils"></i>
-
-                        <strong>
-                            Restaurantes
-                        </strong>
-
-                        <small>
-                            Cardápio & WhatsApp
-                        </small>
-
-                    </div>
-
-
-                </div>
-
-
-
-                <div class="project-info">
-
-
-                    <div>
-
-                        <span>
-                            Landing Page
-                        </span>
-
-                        <h3>
-                            Experiência gastronômica
-                        </h3>
+                        </div>
 
                     </div>
 
+                    <div class="project-info">
 
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <div>
+                            <span>Site para Restaurante</span>
+                            <h3>Brasa Burger</h3>
+                            <small class="project-description">
+                                Site demonstrativo com cardápio, combos, delivery e pedidos via WhatsApp.
+                            </small>
+                        </div>
 
+                        <div class="project-arrow">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
 
-                </div>
+                    </div>
 
+                </a>
 
             </article>
 
 
-
-            <!-- PROJETO 3 - BARBEARIA IMPERIAL -->
+<!-- PROJETO 3 - BARBEARIA IMPERIAL -->
 
             <article class="project-card project-card-real">
 
